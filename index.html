@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> 
+    <title>Meu portifólio | Adrielle Gabriel</title>
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+      
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        }, {
+          threshold: 0.1 // quanto da seção deve estar visível para ativar
+        });
+      
+        reveals.forEach(el => observer.observe(el));
+      </script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">Portifólio<span>Adrielle</span></div>
+            <div class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Inicial (Hero) -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span class="highlight">Adrielle</span></h1>
+            <p> Estudante de Bacharelado em ciência da computação, com foco em dados e  desenvolvimento back-end</p>
+            <a href="#projetos" class="cta-button">Ver Projetos</a>
+        </div>
+        <div class="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-img">
+                    <img src="adrielle.jpeg" alt="Adrielle">
+                </div>
+                <div class="sobre-text">
+                    <h3>Desenvolvedor Full Stack & Entusiasta de Tecnologia</h3>
+                    <p>Minha jornada com desenvolvimento começou na faculdade, onde estudo Ciência da Computação. Desde então, venho constantemente aprendendo e me adaptando às novas tecnologias e metodologias do mercado.</p>
+                    <a href="#contato" class="cta-button">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+<section id="habilidades">
+    <div class="container">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="image.png" alt="Ícone Frontend" width="40" height="40">
+                </div>
+                <h3 class="skill-title">Frontend</h3>
+                <p>HTML5, CSS3, JavaScript, CSS</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="image.png" alt="Ícone DevOps" width="40" height="40">
+                </div>
+                <h3 class="skill-title">DevOps</h3>
+                <p>Git, GitHub</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="image.png" alt="Ícone UI/UX" width="40" height="40">
+                </div>
+                <h3 class="skill-title">UI/UX</h3>
+                <p>Figma, Adobe XD, Prototyping</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="image.png" alt="Ícone Backend" width="40" height="40">
+                </div>
+                <h3 class="skill-title">Back-end</h3>
+                <p>Python</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção Contato -->
+<section id="contato">
+    <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="image_copy.png" alt="Ícone Telefone" width="32" height="32">
+                    </div>
+                    <div class="contact-text">
+                        <h3>Telefone</h3>
+                        <p>(71) 98290-0577</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="e-mail.png" alt="Ícone Email" width="32" height="32">
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>adriellegsantana13@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="loc.png" alt="Ícone Localização" width="32" height="32">
+                    </div>
+                    <div class="contact-text">
+                        <h3>Localização</h3>
+                        <p>|São Paulo-SP</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+                    <div class="contact-item">
+                       
+                        
+                        <div class="contact-text">
+                           
+                            <p>DEIXE SUA MENSAGEM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="Mensagem"></textarea>
